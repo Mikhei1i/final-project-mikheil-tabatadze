@@ -146,19 +146,22 @@ a {
 
 body {
   background-color: rgb(15, 15, 15);
+  height: 3000px;
+  font-family: "Arial GEO", sans-serif;
 }
 
 header {
   padding: 15px;
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  z-index: 100000;
   top: 30px;
   left: 10%;
   width: 80%;
   background-color: rgba(29, 29, 29, 0.661);
   border-radius: 50px;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 header .flex-box {
   display: -webkit-box;
@@ -206,4 +209,37 @@ header .flex-box nav ul button:hover {
 }
 header .flex-box nav ul a {
   color: white;
+}
+
+.s1 {
+  margin-top: 140px;
+}
+.s1 .carousel-inner {
+  height: 590px;
+  position: relative;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.s1 .carousel-inner h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 100px;
+  -webkit-text-stroke: black 0.5px;
+}
+.s1 .carousel-inner img {
+  height: 610px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
 }/*# sourceMappingURL=global.css.map */

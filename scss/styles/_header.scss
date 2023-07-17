@@ -4,18 +4,20 @@
 
 body {
     background-color: rgb(15, 15, 15);
+    height: 3000px;
+    font-family: "Arial GEO", sans-serif;
 }
 
 header {
     padding: 15px;
     position: fixed;
-    display: flex;
+    z-index: 100000;
     top: 30px;
     left: 10%;
     width: 80%;
     background-color: rgba(29, 29, 29, 0.661);
     border-radius: 50px;
-
+    transition: opacity 0.5s;
 
     .flex-box {
         display: flex;
