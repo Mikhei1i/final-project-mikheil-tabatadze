@@ -33,10 +33,11 @@
     }
 }
 
-// s2
+// s2 https://www.figma.com/file/585bJxLSdE2vQfhgucHHPL/Free-Figma-Templates---Fashion-Haus_?node-id=0%3A20&mode=dev
 
 .s2 {
     margin-top: 100px;
+    margin-bottom: 50px;
 
     .container {
         @include myContainer(1200px);
@@ -111,6 +112,61 @@
         }
 
     }
+}
+
+// s3
+
+.s3 {
+
+    h1 {
+        color: white;
+        font-size: 60px;
+        position: relative;
+        display: inline-block;
+        left: 50%;
+        transform: translate(-70%);
+        padding: 100px 0 0 0;
 
 
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                left: -50%;
+                transform: translate(-70%);
+            }
+
+            100% {
+                opacity: 1;
+                left: 50%;
+                transform: translate(-70%);
+            }
+        }
+    }
+
+    p {
+        color: white;
+        font-size: 18px;
+        max-width: 500px;
+        text-align: center;
+        width: 100%;
+        top: 250px;
+        position: relative;
+        display: inline-block;
+        left: 50%;
+        transform: translate(-80%);
+
+        @keyframes slideIn2 {
+            0% {
+                opacity: 0;
+                left: -50%;
+                transform: translate(-80%);
+            }
+
+            100% {
+                opacity: 1;
+                left: 50%;
+                transform: translate(-80%);
+            }
+        }
+    }
 }
