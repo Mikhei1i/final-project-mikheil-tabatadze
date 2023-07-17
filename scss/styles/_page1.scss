@@ -1,3 +1,4 @@
+// s1
 .s1 {
     margin-top: 140px;
 
@@ -30,4 +31,86 @@
         }
 
     }
+}
+
+// s2
+
+.s2 {
+    margin-top: 100px;
+
+    .container {
+        @include myContainer(1200px);
+    }
+
+    .flex-content {
+        display: flex;
+        justify-content: space-between;
+
+        h1 {
+            color: white;
+            font-size: 50px;
+            max-width: 390px;
+            width: 100%;
+            margin-bottom: 60px;
+            line-height: 52px;
+        }
+
+        p {
+            color: white;
+            max-width: 443px;
+            width: 100%;
+            font-size: 18px;
+            margin-bottom: 30px;
+            line-height: 23px;
+        }
+
+
+        button {
+            padding: 14px 24px;
+            border-radius: 24px;
+            background-color: #2945FF;
+            border: 1px solid #2945FF;
+            color: white;
+            cursor: pointer;
+            transition: all 0.15s;
+
+            &:hover {
+                background-color: #1d32ba;
+                border: 1px solid white;
+            }
+        }
+
+        .image-container {
+            position: relative;
+            max-width: 465px;
+            width: 100%;
+            height: 390px;
+
+            .game-awards {
+                max-width: 465px;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 20px;
+                height: 390px;
+                position: static;
+            }
+
+            .dots1 {
+                position: absolute;
+                left: -20px;
+                top: -20px;
+                z-index: -1;
+            }
+
+            .dots2 {
+                position: absolute;
+                bottom: -20px;
+                right: -20px;
+                z-index: -1;
+            }
+        }
+
+    }
+
+
 }
