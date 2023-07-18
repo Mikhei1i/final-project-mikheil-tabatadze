@@ -226,15 +226,16 @@ header .flex-box nav ul a {
   position: absolute;
   top: 50%;
   left: 50%;
+  font-weight: 600;
   z-index: 10;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: white;
-  font-weight: 900;
   font-size: 70px;
   line-height: 100px;
-  -webkit-text-stroke: black 0.5px;
+  background-color: rgba(29, 29, 29, 0.328);
+  border-radius: 20px;
 }
 .s1 .carousel-inner img {
   height: 610px;
@@ -288,6 +289,7 @@ header .flex-box nav ul a {
 .s2 .flex-content h1 {
   color: white;
   font-size: 50px;
+  font-weight: 600;
   max-width: 390px;
   width: 100%;
   margin-bottom: 60px;
@@ -344,86 +346,49 @@ header .flex-box nav ul a {
   z-index: -1;
 }
 
-.s3 h1 {
+.s3 .year-text {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(29, 29, 29, 0.328);
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+  border-radius: 20px;
+}
+.s3 .year-text h1 {
   color: white;
   font-size: 60px;
-  position: relative;
+  font-weight: 600;
   display: inline-block;
-  left: 50%;
-  -webkit-transform: translate(-70%);
-      -ms-transform: translate(-70%);
-          transform: translate(-70%);
-  padding: 100px 0 0 0;
+  padding: 30px;
 }
-@-webkit-keyframes slideIn {
-  0% {
-    opacity: 0;
-    left: -50%;
-    -webkit-transform: translate(-70%);
-            transform: translate(-70%);
-  }
-  100% {
-    opacity: 1;
-    left: 50%;
-    -webkit-transform: translate(-70%);
-            transform: translate(-70%);
-  }
-}
-@keyframes slideIn {
-  0% {
-    opacity: 0;
-    left: -50%;
-    -webkit-transform: translate(-70%);
-            transform: translate(-70%);
-  }
-  100% {
-    opacity: 1;
-    left: 50%;
-    -webkit-transform: translate(-70%);
-            transform: translate(-70%);
-  }
-}
-.s3 p {
+.s3 .year-text p {
   color: white;
   font-size: 18px;
   max-width: 500px;
   text-align: center;
   width: 100%;
   top: 250px;
-  position: relative;
   display: inline-block;
-  left: 50%;
-  -webkit-transform: translate(-80%);
-      -ms-transform: translate(-80%);
-          transform: translate(-80%);
+  padding: 30px;
 }
-@-webkit-keyframes slideIn2 {
-  0% {
-    opacity: 0;
-    left: -50%;
-    -webkit-transform: translate(-80%);
-            transform: translate(-80%);
-  }
-  100% {
-    opacity: 1;
-    left: 50%;
-    -webkit-transform: translate(-80%);
-            transform: translate(-80%);
-  }
-}
-@keyframes slideIn2 {
-  0% {
-    opacity: 0;
-    left: -50%;
-    -webkit-transform: translate(-80%);
-            transform: translate(-80%);
-  }
-  100% {
-    opacity: 1;
-    left: 50%;
-    -webkit-transform: translate(-80%);
-            transform: translate(-80%);
-  }
+.s3 .nominees {
+  display: block;
+  position: static;
+  height: 1200px;
 }
 .s3 .container {
   max-width: 1300px;
@@ -433,11 +398,10 @@ header .flex-box nav ul a {
   margin-top: 50px;
   position: relative;
 }
-.s3 .nominees {
-  margin-top: 240px;
-}
 .s3 .nominees .nominees-title {
-  margin-left: 50px;
+  color: white;
+  font-size: 70px;
+  text-align: center;
 }
 .s3 .flex-box {
   display: -webkit-box;
@@ -516,13 +480,15 @@ header .flex-box nav ul a {
 .s3 .flex-box .card1 h1 {
   position: absolute;
   bottom: 105px;
-  right: -50px;
+  left: 10px;
+  color: white;
   font-size: 40px;
   max-width: 230px;
   width: 100%;
   padding: 10px;
   display: inline-block;
   margin: 0;
+  font-weight: 600;
   padding: 0;
 }
 .s3 .flex-box .card1 div {
@@ -563,4 +529,141 @@ header .flex-box nav ul a {
 .s3 .flex-box .card1 button:hover {
   background-color: #5C8692;
   border: 1px solid white;
+}
+.s3 .winner {
+  margin-top: 10px;
+  height: auto;
+  text-align: center;
+}
+.s3 .winner .text-container {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.s3 .winner .text-container h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.s3 .winner .text-container p {
+  color: white;
+  font-size: 18px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+.s3 .winner .winner-box {
+  opacity: 0;
+  background-color: rgba(29, 29, 29, 0.661);
+  max-width: 310px;
+  width: 100%;
+  margin: 0 auto;
+  height: 553px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  z-index: 10;
+  cursor: pointer;
+  border-radius: 20px;
+  -webkit-transition: opacity 4s, max-width 1s;
+  -o-transition: opacity 4s, max-width 1s;
+  transition: opacity 4s, max-width 1s;
+}
+.s3 .winner .winner-box p {
+  opacity: 0;
+  max-width: 300px;
+  width: 100%;
+  position: absolute;
+  right: 40px;
+  top: 30px;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  color: white;
+}
+.s3 .winner .winner-box p a {
+  color: #1d32ba;
+}
+.s3 .winner .winner-box p a:hover {
+  text-decoration: underline;
+}
+.s3 .winner .winner-box button {
+  position: absolute;
+  padding: 14px 24px;
+  border-radius: 24px;
+  background-color: #5C8692;
+  border: 1px solid #5C8692;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  transition: all 0.15s;
+  right: 90px;
+  bottom: 40px;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  -webkit-transition: background-color 0.15s;
+  -o-transition: background-color 0.15s;
+  transition: background-color 0.15s;
+  -webkit-transition: border 0.15s;
+  -o-transition: border 0.15s;
+  transition: border 0.15s;
+}
+.s3 .winner .winner-box button:hover {
+  background-color: #47666f;
+  border: 1px solid white;
+}
+.s3 .winner .winner-box:hover {
+  z-index: 10;
+  max-width: 700px;
+}
+.s3 .winner .winner-box:hover p {
+  display: block;
+  opacity: 1;
+}
+.s3 .winner .winner-box:hover button {
+  opacity: 1;
+}
+.s3 .winner .winner-box .winner-img {
+  -webkit-transition: -webkit-box-shadow 2s;
+  transition: -webkit-box-shadow 2s;
+  -o-transition: box-shadow 2s;
+  transition: box-shadow 2s;
+  transition: box-shadow 2s, -webkit-box-shadow 2s;
+  display: inline-block;
+  max-width: 310px;
+  position: relative;
+  width: 100%;
+  height: 553px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px -200px 68px 53px rgba(0, 0, 0, 0.64) inset;
+  -webkit-box-shadow: 0px -200px 68px 53px rgba(0, 0, 0, 0.64) inset;
+  -moz-box-shadow: 0px -200px 68px 53px rgba(0, 0, 0, 0.64) inset;
+}
+.s3 .winner .winner-box .winner-img h5 {
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+  bottom: 50px;
+}
+.s3 .winner .winner-box .winner-img img {
+  max-width: 310px;
+  width: 100%;
+  position: relative;
+  height: 553px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
 }/*# sourceMappingURL=global.css.map */
