@@ -47,6 +47,21 @@
         display: flex;
         justify-content: space-between;
 
+        @keyframes fadeIn {
+            0% {
+                max-width: 1100px;
+                height: 500px;
+                opacity: 0;
+            }
+
+            100% {
+                max-width: 1200px;
+                height: 527px;
+                opacity: 1;
+            }
+        }
+
+
         h1 {
             color: white;
             font-size: 50px;
@@ -86,6 +101,8 @@
             max-width: 465px;
             width: 100%;
             height: 390px;
+
+
 
             .game-awards {
                 max-width: 465px;
@@ -169,4 +186,148 @@
             }
         }
     }
+
+    .container {
+        max-width: 1300px;
+        width: 100%;
+        height: 200px;
+        margin: 0 auto;
+        margin-top: 50px;
+        position: relative;
+    }
+
+    .nominees {
+        margin-top: 240px;
+
+        .nominees-title {
+            margin-left: 50px;
+        }
+    }
+
+    .flex-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 100px;
+        align-items: center;
+
+        .card1 {
+            max-width: 330px;
+            margin-bottom: 50px;
+            width: 100%;
+            height: 470px;
+            position: relative;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.15s;
+
+            &:hover {
+                background-color: rgba(29, 29, 29, 0.661);
+                max-width: 340px;
+                height: 480px;
+            }
+
+            &:hover img {
+                max-width: 330px;
+                height: 260px;
+            }
+
+            &:hover .vid1 {
+                max-width: 330px;
+                height: 260px;
+                opacity: 1;
+            }
+
+
+            img {
+                max-width: 320px;
+                width: 100%;
+                height: 250px;
+                padding: 10px;
+                left: 4px;
+                top: 5px;
+                object-fit: cover;
+                position: absolute;
+                transition: all 0.15s;
+                border-radius: 20px;
+            }
+
+            .vid1 {
+                max-width: 320px;
+                width: 100%;
+                height: 250px;
+                padding: 10px;
+                left: 4px;
+                top: 5px;
+                object-fit: cover;
+                position: absolute;
+                transition: all 0.15s;
+                opacity: 0;
+                border-radius: 20px;
+                transition: opacity 0.5s;
+            }
+
+
+            h1 {
+                position: absolute;
+                bottom: 105px;
+                right: -50px;
+                font-size: 40px;
+                max-width: 230px;
+                width: 100%;
+                padding: 10px;
+                display: inline-block;
+                margin: 0;
+                padding: 0;
+            }
+
+
+            div {
+                color: rgb(171, 171, 171);
+                position: absolute;
+                font-size: 14px;
+                left: 10px;
+                bottom: 75px;
+                opacity: 0.8;
+                transition: all 0.15s;
+                width: auto;
+                margin: 0;
+                padding: 10px;
+                padding: 0;
+            }
+
+            button {
+                color: rgb(171, 171, 171);
+                position: absolute;
+                font-size: 14px;
+                left: 10px;
+                bottom: 10px;
+                opacity: 0.8;
+                transition: all 0.15s;
+                width: auto;
+                margin: 0;
+
+                padding: 14px 24px;
+                border-radius: 10px;
+                background-color: transparent;
+                border: 1px solid #5C8692;
+                color: white;
+                cursor: pointer;
+                transition: all 0.15s;
+
+                &:hover {
+                    background-color: #5C8692;
+                    border: 1px solid white;
+                }
+            }
+
+
+        }
+
+    }
+
+
+
+
 }

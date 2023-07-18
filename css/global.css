@@ -261,6 +261,30 @@ header .flex-box nav ul a {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@-webkit-keyframes fadeIn {
+  0% {
+    max-width: 1100px;
+    height: 500px;
+    opacity: 0;
+  }
+  100% {
+    max-width: 1200px;
+    height: 527px;
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    max-width: 1100px;
+    height: 500px;
+    opacity: 0;
+  }
+  100% {
+    max-width: 1200px;
+    height: 527px;
+    opacity: 1;
+  }
+}
 .s2 .flex-content h1 {
   color: white;
   font-size: 50px;
@@ -400,4 +424,143 @@ header .flex-box nav ul a {
     -webkit-transform: translate(-80%);
             transform: translate(-80%);
   }
+}
+.s3 .container {
+  max-width: 1300px;
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  position: relative;
+}
+.s3 .nominees {
+  margin-top: 240px;
+}
+.s3 .nominees .nominees-title {
+  margin-left: 50px;
+}
+.s3 .flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 100px;
+  align-items: center;
+}
+.s3 .flex-box .card1 {
+  max-width: 330px;
+  margin-bottom: 50px;
+  width: 100%;
+  height: 470px;
+  position: relative;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  transition: all 0.15s;
+}
+.s3 .flex-box .card1:hover {
+  background-color: rgba(29, 29, 29, 0.661);
+  max-width: 340px;
+  height: 480px;
+}
+.s3 .flex-box .card1:hover img {
+  max-width: 330px;
+  height: 260px;
+}
+.s3 .flex-box .card1:hover .vid1 {
+  max-width: 330px;
+  height: 260px;
+  opacity: 1;
+}
+.s3 .flex-box .card1 img {
+  max-width: 320px;
+  width: 100%;
+  height: 250px;
+  padding: 10px;
+  left: 4px;
+  top: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  -webkit-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  transition: all 0.15s;
+  border-radius: 20px;
+}
+.s3 .flex-box .card1 .vid1 {
+  max-width: 320px;
+  width: 100%;
+  height: 250px;
+  padding: 10px;
+  left: 4px;
+  top: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  -webkit-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  transition: all 0.15s;
+  opacity: 0;
+  border-radius: 20px;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+.s3 .flex-box .card1 h1 {
+  position: absolute;
+  bottom: 105px;
+  right: -50px;
+  font-size: 40px;
+  max-width: 230px;
+  width: 100%;
+  padding: 10px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.s3 .flex-box .card1 div {
+  color: rgb(171, 171, 171);
+  position: absolute;
+  font-size: 14px;
+  left: 10px;
+  bottom: 75px;
+  opacity: 0.8;
+  -webkit-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  transition: all 0.15s;
+  width: auto;
+  margin: 0;
+  padding: 10px;
+  padding: 0;
+}
+.s3 .flex-box .card1 button {
+  color: rgb(171, 171, 171);
+  position: absolute;
+  font-size: 14px;
+  left: 10px;
+  bottom: 10px;
+  opacity: 0.8;
+  -webkit-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  transition: all 0.15s;
+  width: auto;
+  margin: 0;
+  padding: 14px 24px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid #5C8692;
+  color: white;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.s3 .flex-box .card1 button:hover {
+  background-color: #5C8692;
+  border: 1px solid white;
 }/*# sourceMappingURL=global.css.map */
