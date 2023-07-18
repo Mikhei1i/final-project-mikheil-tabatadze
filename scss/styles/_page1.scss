@@ -383,9 +383,7 @@
                 right: 90px;
                 bottom: 40px;
                 opacity: 0;
-                transition: opacity .4s ease-in-out;
-                transition: background-color 0.15s;
-                transition: border 0.15s;
+                transition: opacity .4s ease-in-out, background-color 0.15s, border 0.15s;
 
                 &:hover {
                     background-color: #47666f;

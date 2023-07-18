@@ -608,15 +608,9 @@ header .flex-box nav ul a {
   right: 90px;
   bottom: 40px;
   opacity: 0;
-  -webkit-transition: opacity 0.4s ease-in-out;
-  -o-transition: opacity 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out;
-  -webkit-transition: background-color 0.15s;
-  -o-transition: background-color 0.15s;
-  transition: background-color 0.15s;
-  -webkit-transition: border 0.15s;
-  -o-transition: border 0.15s;
-  transition: border 0.15s;
+  -webkit-transition: opacity 0.4s ease-in-out, background-color 0.15s, border 0.15s;
+  -o-transition: opacity 0.4s ease-in-out, background-color 0.15s, border 0.15s;
+  transition: opacity 0.4s ease-in-out, background-color 0.15s, border 0.15s;
 }
 .s3 .winner .winner-box button:hover {
   background-color: #47666f;
