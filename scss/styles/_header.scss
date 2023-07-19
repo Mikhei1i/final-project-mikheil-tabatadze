@@ -8,6 +8,14 @@ body {
     font-family: "Arial GEO", sans-serif;
 }
 
+::-webkit-scrollbar-thumb {
+    background-color: #1d32ba;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
 header {
     padding: 15px;
     position: fixed;
