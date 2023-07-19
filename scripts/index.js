@@ -128,7 +128,6 @@ function winner5 () {
 winner5()
 
 // winner 6 
-// winner 5
 
 function winner6 () {
   function triggerAnimation() {
@@ -153,6 +152,32 @@ function winner6 () {
 }
 
 winner6()
+
+// winner 7
+
+function winner7 () {
+  function triggerAnimation() {
+    var box = document.getElementById("winner7");
+    box.style.opacity = '1'
+  }
+  
+  function handleScroll() {
+    var box = document.getElementById("winner7");
+    var boxOffsetTop = box.offsetTop;
+    var windowHeight = window.innerHeight;
+    var scrollY = window.scrollY;
+    var triggerOffset = 100;
+  
+    if (scrollY > boxOffsetTop - windowHeight + triggerOffset) {
+      triggerAnimation();
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }
+  
+  window.addEventListener("scroll", handleScroll);
+}
+
+winner7()
 
 function playVid(card) {
   const video = card.querySelector('.vid1');
