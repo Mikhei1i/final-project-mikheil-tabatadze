@@ -190,3 +190,10 @@ function pauseVid(card) {
   video.setAttribute('autoplay', false);
   video.pause();
 }
+
+const container = document.querySelector('.years-container');
+
+container.addEventListener('wheel', (event) => {
+  event.preventDefault();
+  container.scrollLeft += event.deltaY;
+});

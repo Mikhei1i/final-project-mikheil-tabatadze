@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project</title>
+    <script
+      src="https://kit.fontawesome.com/2d3e948390.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/global.css" />
+  </head>
+  <body>
+    <header id="myheader">
+      <div class="container flex-box">
+        <a href="#"
+          ><img src="../images/თიბისი.png" alt="" class="main-logo"
+        /></a>
+        <nav>
+          <ul>
+            <li>
+              <a href=""><button>ჩვენს შესახებ</button></a>
+            </li>
+            <li><a href="">სერვისები</a></li>
+            <li><a href="">სიახლეები</a></li>
+            <li><a href="">კონტაქტი</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="y2014-s1">
+      <div class="year-text">
+        <h1 id="year1">2020</h1>
+        <p id="text1">
+          2020 წელს თამაშების სამყარო აყვავდა კრეატიულობითა და გამძლეობით. მას
+          შემდეგ, რაც COVID-19 პანდემიამ შეცვალა ყოველდღიური ცხოვრება, თამაშები
+          მილიონობით ადამიანისთვის პანდემიისგან და სამყაროსგან მნიშვნელოვანი
+          გაქცევის ფუნქციას ასრულებდა. AAA-ს ძირითადი ტიტულები, როგორიცაა "The
+          Last of Us Part II" და "Cyberpunk 2077" დიდი მოლოდინისა და
+          აღფრთოვანების გამოიწვევა. ინდი თამაშებმა, როგორიცაა "Hades" და "Among
+          Us", ფართო მოწონება დაიმსახურა და აჩვენა მცირე განვითარების გუნდების
+          ძალა. Esports ადაპტირებულია ონლაინ ფორმატებზე, აგრძელებს გლობალური
+          აუდიტორიის მოხიბვლას. როდესაც ვირტუალური მოვლენები ნორმად იქცა, The
+          Game Awards-მა მოიცვა ციფრული სფერო, რათა აღენიშნა განსაკუთრებული
+          მიღწევები, რომლებმაც განსაზღვრეს ნამდვილად უპრეცედენტო წელი თამაშების
+          სფეროში.
+        </p>
+      </div>
+      <div class="nominees">
+        <h1 class="nominees-title">ნომინანტები</h1>
+        <div class="container nominees-flex-box">
+          <div
+            class="card1"
+            onmouseover="playVid(this)"
+            onmouseout="pauseVid(this)"
+          >
+            <img src="../images/new-horizons.jpg" alt="" class="nominees-img" />
+            <video
+              src="../videos/new horizons.mp4"
+              loop
+              muted
+              class="vid1"
+            ></video>
+            <h1 class="nominee-title" style="font-size: 35px">
+              Animal Crossing: New Horizons
+            </h1>
+            <div class="nominee-developer">&#x2022; Nintendo</div>
+            <button class="nominees-more">შეიტყვეთ მეტი</button>
+          </div>
+          <div
+            class="card1"
+            onmouseover="playVid(this)"
+            onmouseout="pauseVid(this)"
+          >
+            <img
+              src="../images/doom-eternal.webp"
+              alt=""
+              class="nominees-img"
+            />
+            <video
+              src="../videos/doom eternal.mp4"
+              loop
+              muted
+              class="vid1"
+            ></video>
+            <h1 class="nominee-title">Doom Eternal</h1>
+            <div class="nominee-developer">&#x2022; id Software</div>
+            <button class="nominees-more">შეიტყვეთ მეტი</button>
+          </div>
+          <div
+            class="card1"
+            onmouseover="playVid(this)"
+            onmouseout="pauseVid(this)"
+          >
+            <img
+              src="../images/final-fantasy-vii.webp"
+              alt=""
+              class="nominees-img"
+            />
+            <video
+              src="../videos/finally fantasy vii.mp4"
+              loop
+              muted
+              class="vid1"
+            ></video>
+            <h1 class="nominee-title">Final Fantasy VII Remake</h1>
+            <div class="nominee-developer">&#x2022; Square Enix</div>
+            <button class="nominees-more">შეიტყვეთ მეტი</button>
+          </div>
+          <div
+            class="card1"
+            onmouseover="playVid(this)"
+            onmouseout="pauseVid(this)"
+          >
+            <img
+              src="../images/ghost of tsushima.jpg"
+              alt=""
+              class="nominees-img"
+              id="img"
+            />
+            <video
+              src="../videos/ghost of tsushima.mp4"
+              loop
+              muted
+              class="vid1"
+              id="vid"
+            ></video>
+            <h1 class="nominee-title" style="font-size: 35px">
+              Ghost of Tsushima
+            </h1>
+            <div class="nominee-developer">
+              &#x2022; Sucker Punch Productions
+            </div>
+            <button class="nominees-more">შეიტყვეთ მეტი</button>
+          </div>
+          <div
+            class="card1"
+            onmouseover="playVid(this)"
+            onmouseout="pauseVid(this)"
+          >
+            <img src="../images/hades.jpg" alt="" class="nominees-img" />
+            <video src="../videos/hades.mp4" loop muted class="vid1"></video>
+            <h1 class="nominee-title">Hades <br /><br /></h1>
+            <div class="nominee-developer">
+              &#x2022; Supergiant Games <br /><br />
+            </div>
+            <button class="nominees-more">შეიტყვეთ მეტი</button>
+          </div>
+          <div
+            class="card1"
+            onmouseover="playVid(this)"
+            onmouseout="pauseVid(this)"
+          >
+            <img
+              src="../images/The-Last-of-Us-Part-Two-Banner-1536x864.png"
+              alt=""
+              class="nominees-img"
+            />
+            <video
+              src="../videos/last of us 2.mp4"
+              loop
+              muted
+              class="vid1"
+            ></video>
+            <h1 class="nominee-title">The Last of Us Part II</h1>
+            <div class="nominee-developer">&#x2022; Naughty Dog</div>
+            <button class="nominees-more">შეიტყვეთ მეტი</button>
+          </div>
+        </div>
+      </div>
+      <div class="winner">
+        <div class="text-container">
+          <h1>გამარჯვებული</h1>
+          <p>
+            2020 წლის გამოწვევების ფონზე, სათამაშო სამყარომ უზრუნველყო
+            მოთამაშეებისთვის საჭირო თავშესაფარი, ნომინანტთა განსაკუთრებული
+            შემადგენლობით. "The Last of Us Part II"-ის მომხიბვლელი სიუჟეტებიდან
+            დაწყებული "Ghost of Tsushima"-ს ძველი იაპონურ მიმზიდველობამდე და
+            "Hades"-ის ინდი ბრწყინვალებამდე, მოთამაშეები გაფუჭებულნი იყვნენ
+            არჩევანის წინაშე. თუმცა, ერთი თამაში გამოირჩეოდა, როგორც საბოლოო
+            გამარჯვებული, რომელმაც მოიპოვა წლის თამაშის ჯილდო. თავისი ემოციური
+            სიღრმით, ტექნიკური მიღწევებითა და ინდუსტრიაზე გავლენით, გამარჯვებული
+            სიმბოლურად განასახიერებდა თამაშის გამძლეობასა და ძალას რთულ დროს.
+          </p>
+        </div>
+        <div class="winner-box" id="winner7">
+          <p>
+            2020 წელს, "The Last of Us Part II" გამოვიდა წლის ტრიუმფალური
+            თამაშის გამარჯვებული, რომელმაც წარუშლელი კვალი დატოვა თამაშების
+            სამყაროში. Naughty Dog-ის ემოციური და შემზარავი შედევრი განაგრძობდა
+            ელის და ჯოელის მომხიბვლელ თხრობას პოსტ-აპოკალიფსურ სამყაროში. თავისი
+            განსაცვიფრებელი ვიზუალით, ინტენსიური გეიმპლეით და ღრმა სიუჟეტებით,
+            თამაშმა მოხიბლა მოთამაშეები, იწვევდა უამრავ ემოციას მთელი
+            მოგზაურობის განმავლობაში. "The Last of Us Part II" გადალახა ვიდეო
+            თამაშების თხრობის საზღვრები და მოგვცა დაუვიწყარი გამოცდილება,
+            რომელმაც დაიმსახურა როგორც კრიტიკოსების მოწონება, ისე გეიმერების
+            გული მთელ მსოფლიოში.<br /><br /><a href="pages/y2014.html"
+              >შეიტყვეთ მეტი...</a
+            >
+          </p>
+          <button>შეიძინეთ ეხლავე!</button>
+          <i class="fa-solid fa-trophy fa-2xl" style="color: #f1b408"></i>
+          <div class="winner-img">
+            <h5>The Last of Us Part II</h5>
+            <img src="../images/The-Last-of-Us-Part-II.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../scripts/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

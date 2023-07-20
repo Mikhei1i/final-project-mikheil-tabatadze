@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project</title>
+    <script
+      src="https://kit.fontawesome.com/2d3e948390.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/global.css" />
+  </head>
+  <body>
+    <header id="myheader">
+      <div class="container flex-box">
+        <a href="#"
+          ><img src="../images/თიბისი.png" alt="" class="main-logo"
+        /></a>
+        <nav>
+          <ul>
+            <li>
+              <a href=""><button>ჩვენს შესახებ</button></a>
+            </li>
+            <li><a href="">სერვისები</a></li>
+            <li><a href="">სიახლეები</a></li>
+            <li><a href="">კონტაქტი</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="y2014-s1">
+      <div class="year-text">
+        <h1 id="year1">2021</h1>
+        <p id="text1">
+          2021 წელს თამაშების სამყარომ განიცადა დინამიური და საინტერესო
+          ლანდშაფტი. AAA ტიტულები, როგორიცაა "Resident Evil Village" და "Ratchet
+          & Clank: Rift Apart" აჩვენა მომავალი თაობის კონსოლების ძალა
+          განსაცვიფრებელი ვიზუალით და ინოვაციური თამაშით. ინდი თამაშებმა,
+          როგორიცაა "Death's Door" და "It Takes Two" გულები დაიპყრეს თავიანთი
+          უნიკალური ისტორიებითა და საინტერესო მექანიკით. Esports განაგრძობდა
+          აყვავებას, მიიპყრო გლობალური აუდიტორია ამაღელვებელი შეჯიბრებით.
+          ვირტუალური რეალობის თამაშები გაფართოვდა, რაც მოთამაშეებს სთავაზობს
+          განსაცვიფრებელ გამოცდილებას. გარდა ამისა, Cloud თამაშების სერვისებმა
+          მოიპოვა პოპულარობა, რამაც უზრუნველყო წვდომა თამაშების უზარმაზარ
+          ბიბლიოთეკაზე მრავალ მოწყობილობაზე.
+        </p>
+      </div>
+      <div class="nominees">
+        <h1 class="nominees-title">ნომინანტები</h1>
+        <div class="container nominees-flex-box">
+          <div
+            class="card1"
+            onmouseover="playVid(this)"
+            onmouseout="pauseVid(this)"
+          >
+            <img
+              src="../images/Deathloop_cover_art.jpg"
+              alt=""
+              class="nominees-img"
+            />
+            <video
+              src="../videos/deathloop.mp4"
+              loop
+              muted
+              class="vid1"
+            ></video>
+            <h1 class="nominee-title" style="font-size: 35px">
+              Deathloop <br /><br />
+            </h1>
+            <div class="nominee-developer">
+              &#x2022; Arkane Studios / Bethesda Softworks <br /><br />
+            </div>
+            <button class="nominees-more">შეიტყვეთ მეტი</button>
+          </div>
+          <div
+            class="card1"
+            onmouseover="playVid(this)"
+            onmouseout="pauseVid(this)"
+          >
+            <img
+              src="../images/metroid-dread.jpg"
+              alt=""
+              class="nominees-img"
+            />
+            <video
+              src="../videos/metroid dread.mp4"
+              loop
+              muted
+              class="vid1"
+            ></video>
+            <h1 class="nominee-title">Metroid Dread</h1>
+            <div class="nominee-developer">&#x2022; Nintendo</div>
+            <button class="nominees-more">შეიტყვეთ მეტი</button>
+          </div>
+          <div
+            class="card1"
+            onmouseover="playVid(this)"
+            onmouseout="pauseVid(this)"
+          >
+            <img
+              src="../images/Psychonauts_2_cover.png"
+              alt=""
+              class="nominees-img"
+            />
+            <video
+              src="../videos/finally fantasy vii.mp4"
+              loop
+              muted
+              class="vid1"
+            ></video>
+            <h1 class="nominee-title">Psychonauts 2</h1>
+            <div class="nominee-developer">
+              &#x2022; Double Fine / Xbox Game Studios
+            </div>
+            <button class="nominees-more">შეიტყვეთ მეტი</button>
+          </div>
+          <div
+            class="card1"
+            onmouseover="playVid(this)"
+            onmouseout="pauseVid(this)"
+          >
+            <img
+              src="../images/ghost of tsushima.jpg"
+              alt=""
+              class="nominees-img"
+              id="img"
+            />
+            <video
+              src="../videos/ghost of tsushima.mp4"
+              loop
+              muted
+              class="vid1"
+              id="vid"
+            ></video>
+            <h1 class="nominee-title" style="font-size: 35px">
+              Ghost of Tsushima
+            </h1>
+            <div class="nominee-developer">
+              &#x2022; Sucker Punch Productions
+            </div>
+            <button class="nominees-more">შეიტყვეთ მეტი</button>
+          </div>
+          <div
+            class="card1"
+            onmouseover="playVid(this)"
+            onmouseout="pauseVid(this)"
+          >
+            <img src="../images/hades.jpg" alt="" class="nominees-img" />
+            <video src="../videos/hades.mp4" loop muted class="vid1"></video>
+            <h1 class="nominee-title">Hades <br /><br /></h1>
+            <div class="nominee-developer">
+              &#x2022; Supergiant Games <br /><br />
+            </div>
+            <button class="nominees-more">შეიტყვეთ მეტი</button>
+          </div>
+          <div
+            class="card1"
+            onmouseover="playVid(this)"
+            onmouseout="pauseVid(this)"
+          >
+            <img
+              src="../images/The-Last-of-Us-Part-Two-Banner-1536x864.png"
+              alt=""
+              class="nominees-img"
+            />
+            <video
+              src="../videos/last of us 2.mp4"
+              loop
+              muted
+              class="vid1"
+            ></video>
+            <h1 class="nominee-title">The Last of Us Part II</h1>
+            <div class="nominee-developer">&#x2022; Naughty Dog</div>
+            <button class="nominees-more">შეიტყვეთ მეტი</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../scripts/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
