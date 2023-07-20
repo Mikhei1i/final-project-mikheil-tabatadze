@@ -156,11 +156,64 @@ header {
   top: 30px;
   left: 10%;
   width: 80%;
-  background-color: rgba(29, 29, 29, 0.661);
+  background-color: rgba(29, 29, 29, 0.893);
   border-radius: 50px;
   -webkit-transition: opacity 0.5s;
   -o-transition: opacity 0.5s;
   transition: opacity 0.5s;
+  max-height: 90px;
+  height: 100%;
+}
+@-webkit-keyframes open {
+  0% {
+    max-height: 90px;
+    height: 100%;
+  }
+  100% {
+    max-height: 300px;
+    height: 100%;
+  }
+}
+@keyframes open {
+  0% {
+    max-height: 90px;
+    height: 100%;
+  }
+  100% {
+    max-height: 300px;
+    height: 100%;
+  }
+}
+@-webkit-keyframes close {
+  0% {
+    max-height: 300px;
+    height: 100%;
+  }
+  100% {
+    max-height: 90px;
+    height: 100%;
+  }
+}
+@keyframes close {
+  0% {
+    max-height: 300px;
+    height: 100%;
+  }
+  100% {
+    max-height: 90px;
+    height: 100%;
+  }
+}
+header .fa-bars {
+  display: none;
+}
+@media (max-width: 925px) {
+  header .fa-bars {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 45px;
+  }
 }
 header .flex-box {
   display: -webkit-box;
@@ -173,8 +226,25 @@ header .flex-box {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 925px) {
+  header .flex-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 header .flex-box .main-logo {
   width: 168px;
+  height: 58px;
+}
+@media (max-width: 925px) {
+  header .flex-box .main-logo {
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+  }
 }
 header .flex-box nav {
   max-width: 500px;
@@ -191,10 +261,32 @@ header .flex-box nav ul {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 925px) {
+  header .flex-box nav ul {
+    opacity: 0;
+    margin-top: 150px;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 header .flex-box nav ul button {
   padding: 14px 24px;
   border-radius: 24px;
-  background-color: #2945FF;
+  background-color: #2945ff;
   border: 1px solid #2945FF;
   color: white;
   cursor: pointer;
@@ -261,28 +353,15 @@ header .flex-box nav ul a {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@-webkit-keyframes fadeIn {
-  0% {
-    max-width: 1100px;
-    height: 500px;
-    opacity: 0;
-  }
-  100% {
-    max-width: 1200px;
-    height: 527px;
-    opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    max-width: 1100px;
-    height: 500px;
-    opacity: 0;
-  }
-  100% {
-    max-width: 1200px;
-    height: 527px;
-    opacity: 1;
+@media (max-width: 951px) {
+  .s2 .flex-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .s2 .flex-content h1 {
@@ -316,6 +395,11 @@ header .flex-box nav ul a {
 .s2 .flex-content button:hover {
   background-color: #1d32ba;
   border: 1px solid white;
+}
+@media (max-width: 951px) {
+  .s2 .flex-content button {
+    margin-bottom: 100px;
+  }
 }
 .s2 .flex-content .image-container {
   position: relative;
@@ -436,8 +520,9 @@ header .flex-box nav ul a {
 }
 .nominees-flex-box .card1:hover {
   background-color: rgba(29, 29, 29, 0.661);
-  max-width: 340px;
-  height: 480px;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .nominees-flex-box .card1:hover .nominees-img {
   max-width: 330px;

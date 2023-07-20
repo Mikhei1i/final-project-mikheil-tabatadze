@@ -47,18 +47,9 @@
         display: flex;
         justify-content: space-between;
 
-        @keyframes fadeIn {
-            0% {
-                max-width: 1100px;
-                height: 500px;
-                opacity: 0;
-            }
-
-            100% {
-                max-width: 1200px;
-                height: 527px;
-                opacity: 1;
-            }
+        @media (max-width: 951px) {
+            flex-direction: column;
+            align-items: center;
         }
 
 
@@ -95,6 +86,11 @@
                 background-color: #1d32ba;
                 border: 1px solid white;
             }
+
+            @media (max-width: 951px) {
+                margin-bottom: 100px;
+            }
+
         }
 
         .image-container {
@@ -223,8 +219,7 @@
 
         &:hover {
             background-color: rgba(29, 29, 29, 0.661);
-            max-width: 340px;
-            height: 480px;
+            transform: scale(1.1);
         }
 
         &:hover .nominees-img {

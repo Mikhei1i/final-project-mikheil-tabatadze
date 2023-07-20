@@ -18,12 +18,17 @@
   </head>
   <body>
     <header id="myheader">
+      <i
+        class="fa-solid fa-bars fa-2xl"
+        style="color: #2945ff"
+        onclick="openMenu();"
+      ></i>
       <div class="container flex-box">
-        <a href="#"
+        <a href="../index.html"
           ><img src="../images/თიბისი.png" alt="" class="main-logo"
         /></a>
-        <nav>
-          <ul>
+        <nav id="nav">
+          <ul id="ul">
             <li>
               <a href=""><button>ჩვენს შესახებ</button></a>
             </li>
@@ -109,7 +114,7 @@
               class="nominees-img"
             />
             <video
-              src="../videos/finally fantasy vii.mp4"
+              src="../videos/psychonuts.mp4"
               loop
               muted
               class="vid1"
@@ -126,37 +131,22 @@
             onmouseout="pauseVid(this)"
           >
             <img
-              src="../images/ghost of tsushima.jpg"
+              src="../images/Ratchet & Clank Rift Apart.webp"
               alt=""
               class="nominees-img"
               id="img"
             />
             <video
-              src="../videos/ghost of tsushima.mp4"
+              src="../videos/Ratchet & Clank Rift Apart.mp4"
               loop
               muted
               class="vid1"
               id="vid"
             ></video>
             <h1 class="nominee-title" style="font-size: 35px">
-              Ghost of Tsushima
+              Ratchet & Clank: Rift Apart
             </h1>
-            <div class="nominee-developer">
-              &#x2022; Sucker Punch Productions
-            </div>
-            <button class="nominees-more">შეიტყვეთ მეტი</button>
-          </div>
-          <div
-            class="card1"
-            onmouseover="playVid(this)"
-            onmouseout="pauseVid(this)"
-          >
-            <img src="../images/hades.jpg" alt="" class="nominees-img" />
-            <video src="../videos/hades.mp4" loop muted class="vid1"></video>
-            <h1 class="nominee-title">Hades <br /><br /></h1>
-            <div class="nominee-developer">
-              &#x2022; Supergiant Games <br /><br />
-            </div>
+            <div class="nominee-developer">&#x2022; Insomniac Games</div>
             <button class="nominees-more">შეიტყვეთ მეტი</button>
           </div>
           <div
@@ -165,24 +155,88 @@
             onmouseout="pauseVid(this)"
           >
             <img
-              src="../images/The-Last-of-Us-Part-Two-Banner-1536x864.png"
+              src="../images/resident-evil-village.png"
               alt=""
               class="nominees-img"
             />
             <video
-              src="../videos/last of us 2.mp4"
+              src="../videos/resident evil village.mp4"
               loop
               muted
               class="vid1"
             ></video>
-            <h1 class="nominee-title">The Last of Us Part II</h1>
-            <div class="nominee-developer">&#x2022; Naughty Dog</div>
+            <h1 class="nominee-title">Resident Evil Village</h1>
+            <div class="nominee-developer">&#x2022; Capcom</div>
             <button class="nominees-more">შეიტყვეთ მეტი</button>
+          </div>
+          <div
+            class="card1"
+            onmouseover="playVid(this)"
+            onmouseout="pauseVid(this)"
+          >
+            <img
+              src="../images/It-Takes-Two.webp"
+              alt=""
+              class="nominees-img"
+            />
+            <video
+              src="../videos/it takes 2.mp4"
+              loop
+              muted
+              class="vid1"
+            ></video>
+            <h1 class="nominee-title">It Takes Two</h1>
+            <div class="nominee-developer">
+              &#x2022; Hazelight Studios / Electronic Arts
+            </div>
+            <button class="nominees-more">შეიტყვეთ მეტი</button>
+          </div>
+        </div>
+      </div>
+      <div class="winner">
+        <div class="text-container">
+          <h1>გამარჯვებული</h1>
+          <p>
+            თამაშების დინამიურ სფეროში 2021 წელს, ნომინანტების შთამბეჭდავმა
+            შემადგენლობამ შექმნა არაჩვეულებრივი წელი. დაწყებული საშინელი
+            შეხვედრებიდან "Resident Evil Village"-ში "Ratchet & Clank: Rift
+            Apart"-ის ინტერგანზომილებიანი ესკაპადები და "Psychonauts 2" და "It
+            Takes Two"-ის გულწრფელი თავგადასავლები, მოთამაშეებს უმასპინძლეს
+            მრავალფეროვანი და მიმზიდველი არჩევანი. მიუხედავად ამისა, ამ
+            გამორჩეულ პრეტენდენტებს შორის ერთმა თამაშმა უპირველეს ყოვლისა
+            გაიმარჯვა, რომელმაც მიიღო წლის პრესტიჟული თამაშის ჯილდო. თავისი
+            თვალწარმტაცი სამყაროთი, ინოვაციური გეიმპლეით და ემოციური რეზონანსით,
+            გამარჯვებულმა წარუშლელი კვალი დატოვა სათამაშო პეიზაჟზე.
+          </p>
+        </div>
+        <div class="winner-box" id="winner">
+          <p>
+            2021 წელს, წლის თამაშის გამარჯვებულმა, "It Takes Two" მოიხიბლა
+            მოთამაშეები თავისი ინოვაციური co-op გეიმპლეით და გულწრფელი
+            შინაარსით. Hazelight Studios-ის მიერ შემუშავებული თამაში მოგვითხრობს
+            განქორწინების ზღვარზე მყოფ წყვილს, რომლებიც ჯადოსნურად
+            გარდაიქმნებიან თოჯინებად, ფანტასტიკურ მოგზაურობაში ურთიერთობის
+            გამოსწორების მიზნით. თავისი წარმოსახვითი მექანიკითა და ემოციური
+            სიღრმით, "It Takes Two" გთავაზობთ უნიკალურ და მიმზიდველ
+            გამოცდილებას, რომელიც აღნიშნავდა თანამშრომლობის ძალას. როდესაც
+            მოთამაშეები თანამშრომლობდნენ ამ არაჩვეულებრივ თავგადასავალში,
+            თამაშის გამომგონებელმა დიზაინმა და ლამაზმა ნარატივმა ფართო მოწონება
+            დაიმსახურა, რაც მას წლის გამორჩეულ ტიტულად აქცევს.<br /><br /><a
+              href="pages/y2014.html"
+              >შეიტყვეთ მეტი...</a
+            >
+          </p>
+          <button>შეიძინეთ ეხლავე!</button>
+          <i class="fa-solid fa-trophy fa-2xl" style="color: #f1b408"></i>
+          <div class="winner-img">
+            <h5 style="margin-left: 20px">It Takes Two</h5>
+            <img src="../images/it-takes-2-banner.jpg" alt="" />
           </div>
         </div>
       </div>
     </section>
     <script src="../scripts/index.js"></script>
+    <script src="../scripts/winner.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
