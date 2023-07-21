@@ -267,6 +267,24 @@ header .flex-box nav ul {
     margin-top: 150px;
   }
 }
+@media (max-width: 550px) {
+  header .flex-box nav ul {
+    font-size: 13px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 200px;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 120px auto;
+  }
+}
+@media (max-width: 550px) {
+  header .flex-box nav ul li {
+    margin-bottom: 50px;
+  }
+}
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -298,8 +316,21 @@ header .flex-box nav ul button:hover {
   background-color: #1d32ba;
   border: 1px solid white;
 }
+@media (max-width: 550px) {
+  header .flex-box nav ul button {
+    padding: 10px 10px;
+    margin-left: -20px;
+  }
+}
 header .flex-box nav ul a {
   color: white;
+  -webkit-transition: color 0.15s;
+  -o-transition: color 0.15s;
+  transition: color 0.15s;
+}
+header .flex-box nav ul a:hover {
+  color: #2945ff;
+  font-weight: 500;
 }
 
 .s1 {
@@ -312,6 +343,11 @@ header .flex-box nav ul a {
   width: 80%;
   margin: 0 auto;
   border-radius: 20px;
+}
+@media (max-width: 550px) {
+  .s1 .carousel-inner {
+    width: 95%;
+  }
 }
 .s1 .carousel-inner h1 {
   position: absolute;
@@ -327,6 +363,12 @@ header .flex-box nav ul a {
   line-height: 100px;
   background-color: rgba(29, 29, 29, 0.328);
   border-radius: 20px;
+}
+@media (max-width: 550px) {
+  .s1 .carousel-inner h1 {
+    font-size: 40px;
+    line-height: 70px;
+  }
 }
 .s1 .carousel-inner img {
   height: 610px;
@@ -373,6 +415,11 @@ header .flex-box nav ul a {
   margin-bottom: 60px;
   line-height: 52px;
 }
+@media (max-width: 550px) {
+  .s2 .flex-content h1 {
+    font-size: 40px;
+  }
+}
 .s2 .flex-content p {
   color: white;
   max-width: 443px;
@@ -380,6 +427,11 @@ header .flex-box nav ul a {
   font-size: 18px;
   margin-bottom: 30px;
   line-height: 23px;
+}
+@media (max-width: 550px) {
+  .s2 .flex-content p {
+    font-size: 14px;
+  }
 }
 .s2 .flex-content button {
   padding: 14px 24px;
@@ -407,6 +459,12 @@ header .flex-box nav ul a {
   width: 100%;
   height: 390px;
 }
+@media (max-width: 550px) {
+  .s2 .flex-content .image-container {
+    max-width: 300px;
+    height: 300px;
+  }
+}
 .s2 .flex-content .image-container .game-awards {
   max-width: 465px;
   width: 100%;
@@ -416,17 +474,37 @@ header .flex-box nav ul a {
   height: 390px;
   position: static;
 }
+@media (max-width: 550px) {
+  .s2 .flex-content .image-container .game-awards {
+    max-width: 300px;
+    height: 300px;
+  }
+}
 .s2 .flex-content .image-container .dots1 {
   position: absolute;
   left: -20px;
   top: -20px;
+  max-width: 124px;
+  width: 100%;
   z-index: -1;
+}
+@media (max-width: 550px) {
+  .s2 .flex-content .image-container .dots1 {
+    max-width: 100px;
+  }
 }
 .s2 .flex-content .image-container .dots2 {
   position: absolute;
   bottom: -20px;
   right: -20px;
+  max-width: 124px;
+  width: 100%;
   z-index: -1;
+}
+@media (max-width: 550px) {
+  .s2 .flex-content .image-container .dots2 {
+    max-width: 100px;
+  }
 }
 
 .years-container {
@@ -474,8 +552,17 @@ header .flex-box nav ul a {
 }
 .y2014-s1 .nominees {
   display: block;
-  position: static;
   height: 1200px;
+}
+@media (max-width: 1015px) {
+  .y2014-s1 .nominees {
+    height: 1800px;
+  }
+}
+@media (max-width: 690px) {
+  .y2014-s1 .nominees {
+    height: 3300px;
+  }
 }
 .y2014-s1 .container {
   max-width: 1300px;
@@ -490,6 +577,11 @@ header .flex-box nav ul a {
   color: white;
   font-size: 70px;
   text-align: center;
+}
+@media (max-width: 550px) {
+  .nominees .nominees-title {
+    font-size: 40px;
+  }
 }
 
 .nominees-flex-box {
@@ -581,6 +673,11 @@ header .flex-box nav ul a {
   font-weight: 600;
   padding: 0;
 }
+@media (max-width: 550px) {
+  .nominees-flex-box .card1 .nominee-title {
+    font-size: 30px;
+  }
+}
 .nominees-flex-box .card1 .nominee-developer {
   color: rgb(171, 171, 171);
   position: absolute;
@@ -667,6 +764,18 @@ header .flex-box nav ul a {
   -o-transition: opacity 4s, max-width 1s;
   transition: opacity 4s, max-width 1s;
 }
+@media (max-width: 676px) {
+  .winner .winner-box {
+    max-width: 200px;
+    height: 400px;
+  }
+}
+@media (max-width: 415px) {
+  .winner .winner-box {
+    max-width: 150px;
+    height: 400px;
+  }
+}
 .winner .winner-box .fa-trophy {
   position: absolute;
   z-index: 10;
@@ -678,12 +787,21 @@ header .flex-box nav ul a {
   max-width: 300px;
   width: 100%;
   position: absolute;
+  z-index: -3;
   right: 40px;
   top: 30px;
   -webkit-transition: opacity 0.4s ease-in-out;
   -o-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out;
   color: white;
+}
+@media (max-width: 676px) {
+  .winner .winner-box p {
+    font-size: 10px;
+    max-width: 200px;
+    right: 0px;
+    top: 40px;
+  }
 }
 .winner .winner-box p a {
   color: #1d32ba;
@@ -713,9 +831,27 @@ header .flex-box nav ul a {
   background-color: #47666f;
   border: 1px solid white;
 }
+@media (max-width: 676px) {
+  .winner .winner-box button {
+    font-size: 13px;
+    padding: 10px 10px;
+    right: 30px;
+  }
+}
 .winner .winner-box:hover {
   z-index: 10;
   max-width: 700px;
+}
+@media (max-width: 676px) {
+  .winner .winner-box:hover {
+    max-width: 400px;
+  }
+}
+@media (max-width: 415px) {
+  .winner .winner-box:hover {
+    max-width: 350px;
+    height: 400px;
+  }
 }
 .winner .winner-box:hover p {
   display: block;
@@ -741,6 +877,20 @@ header .flex-box nav ul a {
   -webkit-box-shadow: 0px -200px 68px 53px rgba(0, 0, 0, 0.64) inset;
   -moz-box-shadow: 0px -200px 68px 53px rgba(0, 0, 0, 0.64) inset;
 }
+@media (max-width: 676px) {
+  .winner .winner-box .winner-img {
+    max-width: 200px;
+    width: 100%;
+    height: 400px;
+  }
+}
+@media (max-width: 415px) {
+  .winner .winner-box .winner-img {
+    max-width: 150px;
+    width: 100%;
+    height: 400px;
+  }
+}
 .winner .winner-box .winner-img h5 {
   position: absolute;
   color: white;
@@ -748,6 +898,16 @@ header .flex-box nav ul a {
   font-weight: 600;
   text-align: center;
   bottom: 50px;
+}
+@media (max-width: 676px) {
+  .winner .winner-box .winner-img h5 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 415px) {
+  .winner .winner-box .winner-img h5 {
+    font-size: 20px;
+  }
 }
 .winner .winner-box .winner-img img {
   max-width: 310px;
@@ -757,6 +917,13 @@ header .flex-box nav ul a {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -2;
+}
+@media (max-width: 676px) {
+  .winner .winner-box .winner-img img {
+    max-width: 200px;
+    width: 100%;
+    height: 400px;
+  }
 }
 
 .year-text {

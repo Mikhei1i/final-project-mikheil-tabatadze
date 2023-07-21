@@ -91,6 +91,21 @@ header {
                     margin-top: 150px;
                 }
 
+                @media (max-width: 550px) {
+                    font-size: 13px;
+                    flex-wrap: wrap;
+                    max-width: 200px;
+                    width: 100%;
+                    justify-content: space-between;
+                    margin: 120px auto;
+                }
+
+                li {
+                    @media (max-width: 550px) {
+                        margin-bottom: 50px;
+                    }
+                }
+
                 @keyframes fadeIn {
                     0% {
                         opacity: 0;
@@ -115,10 +130,21 @@ header {
                         background-color: #1d32ba;
                         border: 1px solid white;
                     }
+
+                    @media (max-width: 550px) {
+                        padding: 10px 10px;
+                        margin-left: -20px;
+                    }
                 }
 
                 a {
                     color: white;
+                    transition: color 0.15s;
+
+                    &:hover {
+                        color: #2945ff;
+                        font-weight: 500;
+                    }
                 }
             }
         }
