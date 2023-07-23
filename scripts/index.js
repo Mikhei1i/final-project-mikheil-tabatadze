@@ -10,13 +10,6 @@ function pauseVid(card) {
   video.pause();
 }
 
-const container = document.querySelector('.years-container');
-
-container.addEventListener('wheel', (event) => {
-  event.preventDefault();
-  container.scrollLeft += event.deltaY;
-});
-
 
 function openMenu() {
   
