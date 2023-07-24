@@ -1,0 +1,258 @@
+.history-s1 {
+    margin-top: 140px;
+    text-align: center;
+    height: 1000px;
+    padding: 20px;
+
+    .years-container {
+        @include myContainer(700px);
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+
+        h1 {
+            color: white;
+            margin-bottom: 200px;
+            font-size: 60px;
+
+            @media (max-width: 700px) {
+                font-size: 40px;
+                margin-left: 20px;
+                margin-bottom: 240px;
+            }
+        }
+
+        .years-div1 {
+            position: relative;
+            max-width: 220px;
+            height: 200px;
+            border-radius: 20px;
+            width: 100%;
+            text-align: center;
+            background-color: rgba(29, 29, 29, );
+            transition: all 0.5s;
+            cursor: pointer;
+            margin-right: 50px;
+            margin-bottom: 100px;
+
+            @media (max-width: 700px) {
+                margin-left: 50px;
+                max-width: 100px;
+                height: 100px;
+            }
+
+            img {
+                max-width: 220px;
+                height: 200px;
+                border-radius: 20px;
+                width: 100%;
+                object-fit: cover;
+
+                @media (max-width: 700px) {
+                    max-width: 100px;
+                    height: 100px;
+                }
+            }
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            &:hover .box {
+                right: -85%;
+                top: -70%;
+                width: 600px;
+                height: 500px;
+
+                @media (max-width: 700px) {
+                    right: -100%;
+                    top: -185%;
+                    width: 300px;
+                    height: 500px;
+                }
+            }
+
+            &:hover .box h5 {
+                opacity: 1;
+                z-index: 10000;
+            }
+
+            .box {
+                position: absolute;
+                height: 200px;
+                float: right;
+                width: 220px;
+                background-color: #2946ff50;
+                border-radius: 20px;
+                top: -20px;
+                right: -20px;
+                opacity: 0.7;
+                transition: all 0.5s;
+                z-index: -2;
+                display: flex;
+                justify-content: center;
+                overflow-y: scroll;
+                text-align: center;
+                scroll-snap-type: y mandatory;
+
+                @media (max-width: 700px) {
+                    width: 100px;
+                    height: 100px;
+                }
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+
+
+                h5 {
+                    font-size: 40px;
+                    color: white;
+                    position: absolute;
+                    opacity: 0;
+                    padding: 20px;
+                    transition: all 0.5s;
+
+                    a {
+                        color: white;
+                    }
+
+                    @media (max-width: 700px) {
+                        font-size: 25px;
+                    }
+                }
+
+                .years-text1 {
+                    left: 30px;
+                    top: 30px;
+                    border-radius: 20px;
+                    border-bottom-right-radius: 0px;
+
+                    @media (max-width: 700px) {
+                        left: 0px;
+                    }
+
+                    &:hover {
+                        background-color: rgba(29, 29, 29, 0.328);
+                    }
+                }
+
+                .years-text2 {
+                    left: 30px;
+                    top: 200px;
+                    border-radius: 20px;
+                    border-top-right-radius: 100%;
+                    border-bottom-right-radius: 100%;
+
+                    @media (max-width: 700px) {
+                        left: 0px;
+                    }
+
+
+                    &:hover {
+                        background-color: rgba(29, 29, 29, 0.328);
+                    }
+                }
+
+                .years-text3 {
+                    left: 30px;
+                    top: 380px;
+                    border-radius: 20px;
+                    border-top-right-radius: 0px;
+
+                    @media (max-width: 700px) {
+                        left: 0px;
+                    }
+
+
+                    &:hover {
+                        background-color: rgba(29, 29, 29, 0.328);
+                    }
+                }
+
+                .years-text4 {
+                    top: 380px;
+                    border-radius: 20px;
+                    border-top-right-radius: 100%;
+                    border-top-left-radius: 100%;
+
+                    &:hover {
+                        background-color: rgba(29, 29, 29, 0.328);
+                    }
+                }
+
+                .years-text5 {
+                    right: 30px;
+                    top: 380px;
+                    border-radius: 20px;
+                    border-top-left-radius: 0px;
+
+                    @media (max-width: 700px) {
+                        right: 0px;
+                    }
+
+
+                    &:hover {
+                        background-color: rgba(29, 29, 29, 0.328);
+                    }
+                }
+
+                .years-text6 {
+                    right: 30px;
+                    top: 200px;
+                    border-radius: 20px;
+
+                    @media (max-width: 700px) {
+                        right: 0px;
+                    }
+
+                    border-top-left-radius: 100%;
+                    border-bottom-left-radius: 100%;
+
+                    &:hover {
+                        background-color: rgba(29, 29, 29, 0.328);
+                    }
+                }
+
+                .years-text7 {
+                    right: 30px;
+                    top: 30px;
+                    border-radius: 20px;
+                    border-bottom-left-radius: 0px;
+
+                    @media (max-width: 700px) {
+                        right: 0px;
+                    }
+
+                    &:hover {
+                        background-color: rgba(29, 29, 29, 0.328);
+                    }
+                }
+
+                .years-text8 {
+                    top: 60px;
+                    border-radius: 20px;
+                    border-bottom-left-radius: 100%;
+                    border-bottom-right-radius: 100%;
+
+                    &:hover {
+                        background-color: rgba(29, 29, 29, 0.328);
+                    }
+                }
+
+                .years-text9 {
+                    top: 0px;
+                    border-radius: 20px;
+                    border-top-left-radius: 100%;
+                    border-top-right-radius: 100%;
+
+                    &:hover {
+                        background-color: rgba(29, 29, 29, 0.328);
+                    }
+                }
+            }
+        }
+    }
+}
