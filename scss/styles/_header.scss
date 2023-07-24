@@ -7,6 +7,8 @@ body {
     font-family: "Arial GEO", sans-serif;
 }
 
+
+
 header {
     padding: 15px;
     position: fixed;
@@ -16,33 +18,9 @@ header {
     width: 80%;
     background-color: rgba(29, 29, 29, 0.893);
     border-radius: 50px;
-    transition: opacity 0.5s;
+    transition: opacity 0.5s, max-height 0.2s, border-radius 0.2s;
     max-height: 90px;
     height: 100%;
-
-    @keyframes open {
-        0% {
-            max-height: 90px;
-            height: 100%;
-        }
-
-        100% {
-            max-height: 300px;
-            height: 100%;
-        }
-    }
-
-    @keyframes close {
-        0% {
-            max-height: 300px;
-            height: 100%;
-        }
-
-        100% {
-            max-height: 90px;
-            height: 100%;
-        }
-    }
 
     .fa-bars {
         display: none;
@@ -81,15 +59,18 @@ header {
             max-width: 500px;
             width: 100%;
 
+            @media (max-width: 925px) {
+                visibility: hidden;
+                opacity: 0;
+
+            }
+
             ul {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
 
-                @media (max-width: 925px) {
-                    opacity: 0;
-                    margin-top: 150px;
-                }
+
 
                 @media (max-width: 550px) {
                     font-size: 13px;
@@ -97,7 +78,7 @@ header {
                     max-width: 200px;
                     width: 100%;
                     justify-content: space-between;
-                    margin: 120px auto;
+                    margin: auto;
                 }
 
                 li {
@@ -105,17 +86,6 @@ header {
                         margin-bottom: 50px;
                     }
                 }
-
-                @keyframes fadeIn {
-                    0% {
-                        opacity: 0;
-                    }
-
-                    100% {
-                        opacity: 1;
-                    }
-                }
-
 
                 button {
                     padding: 14px 24px;
@@ -154,6 +124,18 @@ header {
                 }
             }
         }
-
     }
+}
+
+#nav.active {
+    transition: opacity 1s, visibility 1s;
+    visibility: visible;
+    opacity: 1;
+    margin-top: 90px;
+}
+
+header.active {
+    max-height: 230px;
+    height: 100%;
+    border-radius: 45px;
 }
