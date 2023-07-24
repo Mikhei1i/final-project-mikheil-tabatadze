@@ -777,6 +777,13 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: rgba(29, 50, 186, 0.7450980392);
 }
 
+input.btn {
+  -webkit-user-select: initial;
+  -moz-user-select: initial;
+  -ms-user-select: initial;
+  user-select: initial;
+}
+
 body {
   height: auto;
 }
