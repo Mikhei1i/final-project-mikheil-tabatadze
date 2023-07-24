@@ -1,0 +1,192 @@
+.contact-s1 {
+    padding: 10px
+}
+
+.contact-container {
+    @include myContainer(500px);
+    margin-top: 200px;
+    background-color: rgb(29, 29, 29);
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 100px;
+
+    h1 {
+        font-size: 50px;
+        color: white;
+        margin-bottom: 50px;
+    }
+
+    p {
+        color: white;
+    }
+
+    &:hover {
+        background-color: #12207c;
+    }
+
+    &:hover .background-box {
+        top: 0;
+        right: 0;
+    }
+}
+
+.contact-s2 {
+    padding: 10px;
+    margin-bottom: 100px;
+
+
+    .s2-container {
+        @include myContainer(600px);
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: rgba(29, 29, 29, 0.444);
+        padding: 20px;
+        border-radius: 20px;
+        align-items: center;
+        height: auto;
+
+        .icon-box {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #12207c;
+            border-radius: 20px;
+            width: 120px;
+            height: 130px;
+            cursor: pointer;
+            transition: all 0.2s;
+
+            @media (max-width: 420px) {
+                margin-bottom: 50px;
+            }
+
+            h5 {
+                color: #2945ff;
+                font-weight: 600;
+                display: inline-block;
+                margin-bottom: 10px;
+                transition: all 0.2s;
+            }
+
+            i {
+                margin-bottom: 25px;
+                margin-top: 25px;
+                color: rgb(41, 69, 255);
+                transition: all 0.2s;
+            }
+
+            p {
+                color: #2945ff;
+                font-size: 14px;
+                transition: all 0.2s;
+
+                a {
+                    color: #2945ff;
+                    transition: all 0.2s;
+                }
+            }
+
+            &:hover {
+                border: 2px solid white;
+                background-color: #2945ff;
+                transform: scale(1.05);
+
+                i {
+                    color: white;
+                }
+
+                h5 {
+                    color: white;
+                }
+
+                p {
+                    color: white;
+
+                    a {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contact-s3 {
+    padding: 20px;
+
+    .form-container {
+        padding: 20px;
+        @include myContainer(700px);
+        background-color: rgba(29, 29, 29, 0.444);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 500px;
+
+        form {
+            max-width: 500px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+
+
+            input,
+            .subject {
+                max-width: 500px;
+                width: 100%;
+                font-family: Arial, 'Fontawesome';
+            }
+
+            .name,
+            .email,
+            .phone,
+            .subject {
+                padding: 15px 20px;
+                outline: none;
+                border-radius: 20px;
+                color: white;
+                background-color: rgba(52, 52, 52, 0.444);
+                border: 2px solid rgba(52, 52, 52, 0.444);
+                transition: all 0.15s;
+
+                &:focus {
+                    border: 2px solid #12207c;
+                    color: #2945ff;
+                }
+            }
+
+            .subject {
+                max-height: 150px;
+                resize: none;
+            }
+
+            .submit {
+                width: 100px;
+                padding: 15px 20px;
+                border: 1px solid #2945ff;
+                background-color: #2945ff;
+                color: white;
+                border-radius: 15px;
+                transition: all 0.15s;
+
+                &:hover {
+                    background-color: #12207c;
+                    border: 1px solid white;
+                }
+            }
+        }
+
+    }
+}
