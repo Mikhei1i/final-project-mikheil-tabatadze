@@ -90,6 +90,7 @@ header {
                 i {
                     color: white;
                     transition: all 0.15s;
+                    cursor: pointer;
 
                     &:hover {
                         transform: scale(1.1);
