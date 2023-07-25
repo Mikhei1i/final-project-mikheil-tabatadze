@@ -32,7 +32,5 @@ const currentUrl = document.URL
 language.addEventListener('click', () => {
   if (currentUrl !== "https://mikhei1i-github-io.translate.goog/final-project-mikheil-tabatadze/?_x_tr_sl=ka&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp") {
     window.open('https://mikhei1i-github-io.translate.goog/final-project-mikheil-tabatadze/?_x_tr_sl=ka&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp', '_self')
-  } else {
-    window.open('https://mikhei1i.github.io/final-project-mikheil-tabatadze/', '_self')
-  }
+  } 
 })
