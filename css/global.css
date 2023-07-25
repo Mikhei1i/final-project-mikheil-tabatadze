@@ -210,6 +210,7 @@ header .flex-box {
 header .flex-box .main-logo {
   width: 168px;
   height: 58px;
+  margin-right: 20px;
 }
 @media (max-width: 925px) {
   header .flex-box .main-logo {
@@ -240,6 +241,23 @@ header .flex-box nav ul {
       -ms-flex-align: center;
           align-items: center;
 }
+header .flex-box nav ul i {
+  color: white;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+header .flex-box nav ul i:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #1d32ba;
+}
+@media (max-width: 550px) {
+  header .flex-box nav ul i {
+    position: absolute;
+    right: 20px;
+  }
+}
 @media (max-width: 550px) {
   header .flex-box nav ul {
     font-size: 13px;
@@ -247,15 +265,17 @@ header .flex-box nav ul {
         flex-wrap: wrap;
     max-width: 200px;
     width: 100%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin: auto;
   }
 }
 @media (max-width: 550px) {
   header .flex-box nav ul li {
     margin-bottom: 50px;
+  }
+  header .flex-box nav ul li:nth-child(4) {
+    margin-left: 20px;
   }
 }
 header .flex-box nav ul button {
@@ -277,7 +297,7 @@ header .flex-box nav ul button:hover {
 }
 @media (max-width: 550px) {
   header .flex-box nav ul button {
-    padding: 10px 10px;
+    padding: 10px 15px;
     margin-left: -20px;
   }
 }

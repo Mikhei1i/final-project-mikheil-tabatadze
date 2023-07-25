@@ -57,10 +57,10 @@ header {
             flex-direction: column;
         }
 
-
         .main-logo {
             width: 168px;
             height: 58px;
+            margin-right: 20px;
 
             @media(max-width: 925px) {
                 display: inline-block;
@@ -69,6 +69,8 @@ header {
                 top: 15px;
             }
         }
+
+
 
         nav {
             max-width: 500px;
@@ -85,20 +87,40 @@ header {
                 justify-content: space-between;
                 align-items: center;
 
+                i {
+                    color: white;
+                    transition: all 0.15s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        color: #1d32ba;
+                    }
+
+                    @media (max-width: 550px) {
+                        position: absolute;
+                        right: 20px;
+                    }
+                }
+
 
 
                 @media (max-width: 550px) {
                     font-size: 13px;
+
                     flex-wrap: wrap;
                     max-width: 200px;
                     width: 100%;
-                    justify-content: space-between;
+                    justify-content: space-around;
                     margin: auto;
                 }
 
                 li {
                     @media (max-width: 550px) {
                         margin-bottom: 50px;
+
+                        &:nth-child(4) {
+                            margin-left: 20px;
+                        }
                     }
                 }
 
@@ -123,7 +145,7 @@ header {
                     }
 
                     @media (max-width: 550px) {
-                        padding: 10px 10px;
+                        padding: 10px 15px;
                         margin-left: -20px;
                     }
                 }
