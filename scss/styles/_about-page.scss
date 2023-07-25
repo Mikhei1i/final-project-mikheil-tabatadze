@@ -51,7 +51,7 @@ body {
             }
 
             @media (max-width: 480px) {
-                max-width: 150px;
+                max-width: 100px;
                 width: 100%;
             }
         }
@@ -151,6 +151,11 @@ body {
             overflow: hidden;
             cursor: pointer;
 
+            @media (max-width: 545px) {
+                max-width: 330px;
+                width: 100%;
+            }
+
             &:hover .text-box {
                 bottom: 218px;
                 border-top-left-radius: 0%;
@@ -178,6 +183,10 @@ body {
                 position: absolute;
                 bottom: 0;
                 transition: all 0.5s;
+
+                @media (max-width: 545px) {
+                    width: 350px;
+                }
 
 
                 h2 {

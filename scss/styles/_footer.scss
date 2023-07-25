@@ -1,0 +1,159 @@
+footer {
+    height: auto;
+    background-color: rgb(8, 8, 8);
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    width: 100%;
+
+    .footer-container {
+        @include myContainer(1120px);
+        padding: 20px;
+        padding-top: 50px;
+
+        .footer-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-bottom: 20px;
+            border-bottom: 1px solid white;
+            margin-bottom: 25px;
+
+            @media (max-width: 373px) {
+                justify-content: space-around;
+            }
+
+            .footer-logo {
+                width: 168px;
+                height: 58px;
+
+                @media (max-width: 373px) {
+                    margin-bottom: 30px;
+                }
+            }
+
+            .social-medias {
+                display: flex;
+                max-width: 165px;
+                width: 100%;
+                justify-content: space-around;
+
+                .fb,
+                .twitter,
+                .ig {
+                    border: 2px solid white;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 10px;
+                    transition: all 0.1s;
+                    cursor: pointer;
+                    overflow: hidden;
+
+                    i {
+                        color: white;
+                        transition: all 0.1s;
+                    }
+                }
+
+                .fb {
+                    &:hover {
+                        border-color: #1d32ba;
+                        transform: scale(1.1);
+
+                        i {
+                            color: #1d32ba;
+                        }
+                    }
+                }
+
+                .twitter {
+
+                    &:hover {
+                        border-color: #1DA1F2;
+                        transform: scale(1.1);
+
+                        i {
+                            color: #1DA1F2;
+                        }
+                    }
+                }
+
+
+                .ig {
+                    &:hover {
+                        transform: scale(1.1);
+                        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                        ;
+
+                        h1 {
+                            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                            border-radius: 20px;
+
+                            i {
+                                display: inline;
+                            }
+                        }
+
+
+                    }
+                }
+            }
+        }
+
+        .footer-bottom {
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            @media (max-width: 588px) {
+                align-items: center;
+            }
+
+            .footer-lists {
+                color: white;
+                text-align: start;
+                display: inline-block;
+                margin-right: 50px;
+                margin-bottom: 50px;
+
+                @media (max-width: 588px) {
+                    text-align: center;
+                }
+
+                h1 {
+                    font-size: 25px;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                }
+
+                ul {
+
+                    li {
+                        margin-bottom: 15px;
+                        transition: all 0.15s;
+                        cursor: pointer;
+
+                        a {
+                            color: white;
+
+                            span {
+                                font-weight: 600;
+                                margin-right: 5px;
+                            }
+
+                            &:hover {
+                                color: #1d32ba;
+                                text-decoration: underline;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

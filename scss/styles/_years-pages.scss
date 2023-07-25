@@ -206,6 +206,7 @@
         cursor: pointer;
         border-radius: 20px;
         transition: opacity 4s, max-width 1s;
+        margin-bottom: 100px;
 
         @media (max-width: 676px) {
             max-width: 200px;
