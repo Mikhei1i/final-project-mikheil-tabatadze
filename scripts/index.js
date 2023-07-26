@@ -24,13 +24,14 @@ hamburger.addEventListener('click', () => {
 document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
   hamburger.classList.remove('active')
   navMenu.classList.remove('active')
+  header.classList.remove('active')
 }))
 
-const language = document.getElementById('language')
-const currentUrl = document.URL
+const screen = window.innerWidth
 
-language.addEventListener('click', () => {
-  if (currentUrl !== "https://mikhei1i-github-io.translate.goog/final-project-mikheil-tabatadze/?_x_tr_sl=ka&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp") {
-    window.open('https://mikhei1i-github-io.translate.goog/final-project-mikheil-tabatadze/?_x_tr_sl=ka&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp', '_self')
-  } 
+window.addEventListener('resize', () => {
+  if (screen > '924px') {
+    console.log('hi')
+  }
 })
+
