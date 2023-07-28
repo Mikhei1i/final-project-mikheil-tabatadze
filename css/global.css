@@ -1640,8 +1640,9 @@ body {
 .history-s1 .years-container h1 {
   color: white;
   margin-bottom: 50px;
-  font-size: 60px;
+  font-size: 50px;
   line-height: 80px;
+  font-weight: 600;
 }
 @media (max-width: 700px) {
   .history-s1 .years-container h1 {
