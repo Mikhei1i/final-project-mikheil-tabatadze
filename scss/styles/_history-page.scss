@@ -14,14 +14,61 @@
 
         h1 {
             color: white;
-            margin-bottom: 200px;
+            margin-bottom: 50px;
             font-size: 60px;
             line-height: 80px;
 
             @media (max-width: 700px) {
                 font-size: 40px;
                 margin-left: 20px;
-                margin-bottom: 240px;
+                margin-bottom: 40px;
+            }
+        }
+
+        .arrow-container {
+            @include myContainer(500px);
+            height: 500px;
+            margin-bottom: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background-color: white;
+            color: white;
+
+            @media (max-width: 700px) {
+                margin-bottom: 340px;
+            }
+
+            .fa-down-long {
+                width: 100px;
+                position: absolute;
+                animation-name: arrowMove;
+                animation-duration: 0.49s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+
+                @keyframes arrowMove {
+                    0% {
+                        top: -5px;
+                    }
+
+                    40% {
+                        top: 0;
+                    }
+
+                    60% {
+                        top: 5px;
+                    }
+
+                    80% {
+                        top: 0;
+                    }
+
+                    100% {
+                        top: -5px;
+                    }
+                }
             }
         }
 
