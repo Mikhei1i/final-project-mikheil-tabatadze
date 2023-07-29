@@ -31,6 +31,9 @@
         color: white;
         margin-bottom: 50px;
 
+        @media (max-width: 300px) {
+            font-size: 35px;
+        }
     }
 
     p {

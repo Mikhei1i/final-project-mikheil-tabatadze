@@ -59,6 +59,11 @@ body {
                 max-width: 110px;
                 width: 100%;
             }
+
+
+            @media (max-width: 300px) {
+                margin-left: 110px;
+            }
         }
 
         h5 {
@@ -111,12 +116,21 @@ body {
             @media (max-width: 531px) {
                 left: 10px;
             }
+
+            @media (max-width: 300px) {
+                max-width: 100px;
+                width: 100%;
+            }
         }
     }
 }
 
 .about-s2 {
     margin-left: 10px;
+
+    @media (max-width: 300px) {
+        margin-left: 4px;
+    }
 
     .info-container {
         @include myContainer(1265px);
@@ -139,6 +153,21 @@ body {
             @media (max-width: 545px) {
                 max-width: 330px;
                 width: 100%;
+            }
+
+
+            @media (max-width: 300px) {
+                max-width: 270px;
+                width: 100%;
+            }
+
+
+            @media (max-width: 300px) {
+                height: 610px;
+
+                &:nth-child(3) {
+                    height: 580px;
+                }
             }
 
             &:hover .text-box {
@@ -173,6 +202,11 @@ body {
                     width: 350px;
                 }
 
+                @media (max-width: 300px) {
+                    width: 290px;
+                    height: auto;
+                }
+
 
                 h2 {
                     margin-top: 50px;
@@ -197,6 +231,8 @@ body {
                 object-fit: cover;
                 transition: all 0.5s;
                 height: 300px;
+
+
             }
 
             .img2 {
