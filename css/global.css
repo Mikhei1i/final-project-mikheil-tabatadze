@@ -188,7 +188,7 @@ header .fa-bars .line {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   header .fa-bars .line {
     width: 20px;
   }
@@ -225,7 +225,7 @@ header .flex-box .main-logo {
     top: 15px;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   header .flex-box .main-logo {
     width: 120px;
     -o-object-fit: contain;
@@ -271,7 +271,7 @@ header .flex-box nav ul i:hover {
     right: 20px;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   header .flex-box nav ul i {
     font-size: 19px;
   }
@@ -299,7 +299,7 @@ header .flex-box nav ul li {
     margin-left: 20px;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   header .flex-box nav ul li {
     font-size: 11px;
   }
@@ -576,7 +576,7 @@ body {
     line-height: 70px;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   .s1 .carousel-inner h1 {
     font-size: 30px;
     line-height: 50px;
@@ -633,7 +633,7 @@ body {
     font-size: 40px;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   .s2 .flex-content h1 {
     font-size: 30px;
     line-height: 40px;
@@ -652,7 +652,7 @@ body {
     font-size: 14px;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   .s2 .flex-content p {
     line-height: 25px;
   }
@@ -684,8 +684,8 @@ body {
 }
 @media (max-width: 550px) {
   .s2 .flex-content .image-container {
-    max-width: 300px;
-    height: 300px;
+    max-width: 350px;
+    height: 350px;
   }
 }
 .s2 .flex-content .image-container .game-awards {
@@ -699,8 +699,8 @@ body {
 }
 @media (max-width: 550px) {
   .s2 .flex-content .image-container .game-awards {
-    max-width: 300px;
-    height: 300px;
+    max-width: 350px;
+    height: 350px;
   }
 }
 .s2 .flex-content .image-container .dots1 {
@@ -751,6 +751,10 @@ input.btn {
   -moz-user-select: initial;
   -ms-user-select: initial;
   user-select: initial;
+}
+
+body img {
+  -webkit-user-drag: none;
 }
 
 body {
@@ -837,7 +841,7 @@ body {
     width: 100%;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   .about-s1 .background p,
   .about-s1 .background h5,
   .about-s1 .background h1 {
@@ -898,7 +902,7 @@ body {
     left: 10px;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   .about-s1 .background .box1 {
     max-width: 100px;
     width: 100%;
@@ -908,7 +912,7 @@ body {
 .about-s2 {
   margin-left: 10px;
 }
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   .about-s2 {
     margin-left: 4px;
   }
@@ -943,13 +947,13 @@ body {
     width: 100%;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   .about-s2 .info-container .box2 {
     max-width: 270px;
     width: 100%;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   .about-s2 .info-container .box2 {
     height: 610px;
   }
@@ -988,7 +992,7 @@ body {
     width: 350px;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   .about-s2 .info-container .box2 .text-box {
     width: 290px;
     height: auto;
@@ -1264,7 +1268,7 @@ body {
     height: 400px;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   .winner .winner-box {
     max-width: 120px;
   }
@@ -1295,7 +1299,7 @@ body {
     top: 40px;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   .winner .winner-box p {
     font-size: 8px;
     max-width: 100px;
@@ -1335,7 +1339,7 @@ body {
     right: 30px;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   .winner .winner-box button {
     font-size: 10px;
     padding: 10px 5px;
@@ -1357,7 +1361,7 @@ body {
     height: 400px;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   .winner .winner-box:hover {
     max-width: 270px;
   }
@@ -1399,7 +1403,7 @@ body {
     height: 400px;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   .winner .winner-box .winner-img {
     max-width: 120px;
   }
@@ -1528,7 +1532,7 @@ body {
   color: white;
   margin-bottom: 50px;
 }
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   .contact-container h1 {
     font-size: 35px;
   }
@@ -1890,7 +1894,7 @@ body {
     height: 500px;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   .history-s1 .years-container .years-div1:hover .box {
     right: -80%;
     top: -185%;
@@ -2199,6 +2203,7 @@ body {
   visibility: hidden;
   opacity: 0;
   height: 0;
+  overflow: hidden;
 }
 .learn-more-s2 .learn-more-container .images-rating {
   margin-top: 50px;

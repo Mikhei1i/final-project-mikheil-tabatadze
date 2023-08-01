@@ -21,3 +21,9 @@ input.btn {
     -ms-user-select: initial;
     user-select: initial;
 }
+
+body {
+    img {
+        -webkit-user-drag: none;
+    }
+}
