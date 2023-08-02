@@ -97,9 +97,3 @@ trailer.addEventListener('click', () => {
   trailerVideo.classList.remove('notActive')
   trailerVideo.classList.add('active')
 })
-
-const buy = document.getElementById('buy')
-
-if (buy.innerHTML === 'Buy now!') {
-  buy.style.right = '133px'
-}
