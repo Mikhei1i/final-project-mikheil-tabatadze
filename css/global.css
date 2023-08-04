@@ -1322,11 +1322,12 @@ body {
   cursor: pointer;
   -webkit-transition: all 0.15s;
   transition: all 0.15s;
-  right: 90px;
+  right: 100px;
   bottom: 40px;
   opacity: 0;
   -webkit-transition: opacity 0.4s ease-in-out, background-color 0.15s, border 0.15s;
   transition: opacity 0.4s ease-in-out, background-color 0.15s, border 0.15s;
+  z-index: -20;
 }
 .winner .winner-box button:hover {
   background-color: #47666f;
